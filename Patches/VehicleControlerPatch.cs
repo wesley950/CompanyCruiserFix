@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using UnityEngine;
 
-namespace CompanyCruiserFix.Patches
+namespace CompanyCruiserSteeringFix.Patches
 {
     [HarmonyPatch(typeof(VehicleController))]
     public class VehicleControlerPatch
