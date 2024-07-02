@@ -24,3 +24,8 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore --configuration Release
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: company_cruiser_steering_fix
+        path: bin\Release\netstandard2.1\company_cruiser_steering_fix.dll
