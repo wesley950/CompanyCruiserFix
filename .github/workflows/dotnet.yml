@@ -31,6 +31,6 @@ jobs:
         path: bin\Release\netstandard2.1\company_cruiser_steering_fix.dll
     - name: Make release
       uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, "refs/tags/")
+      if: startsWith(github.ref, 'refs/tags/')
       with: 
         files: company_cruiser_steering_fix
